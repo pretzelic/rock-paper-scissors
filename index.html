@@ -6,17 +6,17 @@
         </head>
         <body>
             <div class="top-banner">
-                <p id="welcome">Welcome to the Rock Paper Scissors game!</p>
-                <img src="images/night.png" width="25px">
+                <p class="par" id="welcome">Welcome to the Rock Paper Scissors game!</p>
+                <img id="mode" onclick="changeMode()" src="images/night.png" width="25px">
             </div>
             <div id="game">
                 <div id="main-screen">
-                    <p id="prematch">The eternal rivalry!</p>
+                    <p class="par" id="prematch">The eternal rivalry!</p>
                     <div id="result" >
                         <img id="man" src="images/human.png">
                         <img id="machine" src="images/machine.png">
                     </div>
-                    <p id="message">Choose your weapon:</p>
+                    <p class="par" id="message">Choose your weapon:</p>
                 </div>
                 <div id="selector">
                     <img id="rock" onclick="playRockPaperScissors(this.id)" src="images/rock.png">
@@ -27,5 +27,7 @@
         <script src="script.js">
             let modeButton = document.getElementById("night-mode");
             let resultScreen = document.getElementById("result");
+            let message = document.getElementById("message");
+            let par = document.getElementsByClassName("par");
         </script>
     </html>

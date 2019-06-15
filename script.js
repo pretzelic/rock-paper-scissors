@@ -69,3 +69,21 @@ function showWinner(a) {
         message.textContent = "Draw!"
     }
 }
+
+function changeMode() {
+    if (document.body.style.backgroundColor === "white") {
+        document.body.style.backgroundColor = "black"
+        for (let i=0; i<3; i++) {
+            document.getElementsByClassName("par")[i].style.color = "white";
+        }
+        document.getElementById("mode").setAttribute("src", "images/day.png");
+        currentMode = "night"
+    } else {
+        document.body.style.backgroundColor = "white"
+        for (let i=0; i<3; i++) {
+            document.getElementsByClassName("par")[i].style.color = "black";
+        }
+        document.getElementById("mode").setAttribute("src", "images/night.png");
+        currentmode = "day";
+    }
+}
