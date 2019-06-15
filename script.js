@@ -46,26 +46,26 @@ function playRockPaperScissors(a) {
         }
     }
     console.log(result);
-    return result;
+    showWinner(result);
 }
 
-function showWinner() {
-    let result
+function showWinner(a) {
+    let result = a;
     if (result === "Human wins") {
         machine.setAttribute("src", "");
-        human.style.marginLeft = "37%"
+        human.setAttribute("src", "images/human.png");
+        human.style.marginLeft = "40%";
+        message.textContent = "Human wins!"
+    }else if (result === "Bot wins") {
+        human.setAttribute("src", "");
+        machine.setAttribute("src", "images/machine.png");
+        machine.style.marginRight = "40%"
+        message.textContent = "Machine wins!"
+    } else {
+        human.setAttribute("src", "images/human.png");
+        human.style.marginLeft = "16%"
+        machine.setAttribute("src", "images/machine.png")
+        machine.style.marginRight = "16%"
+        message.textContent = "Draw!"
     }
-}
-
-function numberOfGames() {
-    let number = Number(prompt("How many times would you like to play"));
-    for (let i=0; i<=number; i++) {
-        playRockPaperScissors();
-    }
-}
-
-function changeMode() {
-    console.log ('it works')
-    let bodyBackgroundColor = document.body;
-    bodyBackgroundColor.style.backgroundColor = "black";
 }
