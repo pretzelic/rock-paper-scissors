@@ -1,3 +1,7 @@
+let modeButton = document.getElementById("night-mode");
+let machine = document.getElementById("machine");
+let human = document.getElementById("man");
+
 function playerChoice () {
     let playerSelection;
     do {
@@ -12,8 +16,8 @@ function botChoice() {
     return options[selector];
 }
 
-function playRockPaperScissors() {
-    let humanChoice = playerChoice();
+function playRockPaperScissors(a) {
+    let humanChoice = a;
     let aiChoice = botChoice();
     let result = "draw"
     if (humanChoice === "rock") {
@@ -42,6 +46,15 @@ function playRockPaperScissors() {
         }
     }
     console.log(result);
+    return result;
+}
+
+function showWinner() {
+    let result
+    if (result === "Human wins") {
+        machine.setAttribute("src", "");
+        human.style.marginLeft = "37%"
+    }
 }
 
 function numberOfGames() {
@@ -51,4 +64,8 @@ function numberOfGames() {
     }
 }
 
-numberOfGames();
+function changeMode() {
+    console.log ('it works')
+    let bodyBackgroundColor = document.body;
+    bodyBackgroundColor.style.backgroundColor = "black";
+}

@@ -2,10 +2,30 @@
     <html> 
         <head>
             <title>Rock Paper Scissors game</title>
+            <link rel="stylesheet" type="text/css" href="styles.css">
         </head>
         <body>
-
-        </body>
+            <div class="top-banner">
+                <p id="welcome">Welcome to the Rock Paper Scissors game!</p>
+                <img src="images/night.png" width="25px">
+            </div>
+            <div id="game">
+                <div id="main-screen">
+                    <p id="prematch">The eternal rivalry!</p>
+                    <div id="result" >
+                        <img id="man" src="images/human.png">
+                        <img id="machine" src="images/machine.png">
+                    </div>
+                    <p>Choose your weapon:</p>
+                </div>
+                <div id="selector">
+                    <img id="rock" onclick="playRockPaperScissors(this.id)" src="images/rock.png">
+                    <img id="paper" onclick="playRockPaperScissors(this.id)" src="images/paper.png">
+                    <img id="scissors" onclick="playRockPaperScissors(this.id)" src="images/scissors.png">
+                </div>
+            </div>
         <script src="script.js">
+            let modeButton = document.getElementById("night-mode");
+            let resultScreen = document.getElementById("result");
         </script>
     </html>

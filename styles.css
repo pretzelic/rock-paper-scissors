@@ -1,0 +1,55 @@
+html {
+    margin: 0;
+}
+
+.top-banner {
+    text-align: center;
+}
+
+.top-banner p {
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 600;
+    font-family: Helvetica, sans-serif, Arial;
+    margin:0;
+}
+
+.top-banner img {
+    float: right;
+}
+
+#main-screen {
+    
+}
+
+#main-screen p {
+    font-size: 3em;
+    margin:0;
+    display: block;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+#result {
+    overflow: auto;
+}
+
+#result img{
+    height: 13%;
+    
+}
+
+#selector img {
+    width:18%;
+    margin:2% 7%;
+} 
+
+#man {
+    float: left;
+    margin-left: 16%;
+}
+
+#machine {
+      float: right;
+      margin-right: 16%;
+  }
