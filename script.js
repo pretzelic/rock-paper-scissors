@@ -68,7 +68,6 @@ function showWinner(a) {
         machine.style.marginRight = "16%"
         message.textContent = "Draw!"
     }
-<<<<<<< HEAD
 }
 
 function changeMode() {
@@ -87,6 +86,4 @@ function changeMode() {
         document.getElementById("mode").setAttribute("src", "images/night.png");
         currentmode = "day";
     }
-=======
->>>>>>> c0a7897e1eefb035b6729beed9c5c096249633d6
 }
